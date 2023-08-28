@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Collections;
+using ObserverClassLib;
 
 namespace EscalerasYSerpientesClassLib
 {
-    public class Jugador
+    public class Jugador : Sujeto
     {
         static Random dado = new Random();
 
@@ -22,8 +23,14 @@ namespace EscalerasYSerpientesClassLib
                 return posicion;
             }
             set {
-                if(value<100)
-                    posicion = value;
+                if (value < 100)
+                {
+                    if (posicion != value)
+                    {
+                        posicion = value;
+                        NotificarATodosSobrePosicion();
+                    }
+                }
                 else
                     posicion = 100;
             }
@@ -38,7 +45,6 @@ namespace EscalerasYSerpientesClassLib
                 return PosicionActual == 100;
             }
         }
-
        
         public Jugador(string nombre)
         {

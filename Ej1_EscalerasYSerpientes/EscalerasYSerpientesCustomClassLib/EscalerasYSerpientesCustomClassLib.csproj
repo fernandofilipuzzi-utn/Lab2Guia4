@@ -55,6 +55,10 @@
       <Project>{2f4e7498-eeed-4311-bf8a-368da07613ac}</Project>
       <Name>EscalerasYSerpientesLegacyClassLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ObserverClassLib\ObserverClassLib.csproj">
+      <Project>{95f16641-37ed-4a62-bb28-45b7d8f8b80d}</Project>
+      <Name>ObserverClassLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="uml\nivel3.jpg" />

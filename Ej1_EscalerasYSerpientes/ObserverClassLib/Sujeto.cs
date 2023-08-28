@@ -10,17 +10,17 @@ namespace ObserverClassLib
     {
         List<IObservador> observadores = new List<IObservador>();
 
-        public void SuscribirObservador(IObservador obs)
+        public void SubscribirObservador(IObservador obs)
         {
             observadores.Add(obs);
         }
 
-        public void DesuscribirObservador(IObservador obs)
+        public void DesubscribirObservador(IObservador obs)
         {
             observadores.Remove(obs);
         }
 
-        public void NotificarPosicion()
+        public void NotificarATodosSobrePosicion()
         {
             foreach (IObservador obs in observadores)
             {

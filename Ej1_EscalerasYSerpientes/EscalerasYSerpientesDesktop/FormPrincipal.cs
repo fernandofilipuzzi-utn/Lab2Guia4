@@ -20,10 +20,11 @@ using EscalerasYSerpientesLegacyClassLib;
 using EscalerasYSerpientesCustomClassLib;
 
 using EscalerasYSerpientesDesktop.Modelo;
+using ObserverClassLib;
 
 namespace EscalerasYSerpientesDesktop
 { 
-    public partial class FormPrincipal : Form
+    public partial class FormPrincipal : Form, IObservador
     {
         EscalerasYSerpientesBasico nuevo;
 
@@ -73,6 +74,9 @@ namespace EscalerasYSerpientesDesktop
                 
                 lbResultados.Items.Add("---");
 
+                for (int n = 0; n < nuevo.CantidadJugadores; n++)
+                    nuevo.VerJugador(n).SubscribirObservador(this);
+
                 btnJugar.Enabled = true;
             }            
         }
@@ -82,33 +86,6 @@ namespace EscalerasYSerpientesDesktop
             if (nuevo.HaFinalizado() == false)
             {
                 nuevo.Jugar();
-
-                for (int n = 0; n < nuevo.CantidadJugadores; n++)
-                {
-                    Jugador jugador = nuevo.VerJugador(n);
-
-                    string linea = $">{jugador.Nombre} se movió desde la posición: {jugador.PosicionAnterior}" +
-                                    $"a la posición {jugador.PosicionActual} ({jugador.Avance})";
-
-                    lbResultados.Items.Add(linea);
-                    lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
-
-                    #region pintando las escaleras y los bichos que lo mordieron
-                    if (jugador is JugadorLegacy legacy)
-                    {
-                        for (int m = 0; m < legacy.VerCantidadQuienes; m++)
-                        {
-                            Elemento quien = legacy.VerPorQuien(m);
-                            linea = $"   Afectado por: {quien.VerDescripcion()} ";
-
-                            lbResultados.Items.Add(linea);
-                            lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
-                        }
-                    }
-                    #endregion
-                }
-
-                lbResultados.Items.Add("------");
             }
             else
             {
@@ -176,6 +153,30 @@ namespace EscalerasYSerpientesDesktop
                 buscado.Ganadas++;
             else
                 partidas.Add(new Partida(nombre, 1));
+            #endregion
+        }
+
+        public void NotificarCambioPosicion(Sujeto sender)
+        {
+            Jugador jugador = (Jugador)sender;
+            string linea = $">{jugador.Nombre} se movió desde la posición: {jugador.PosicionAnterior}" +
+                            $"a la posición {jugador.PosicionActual} ({jugador.Avance})";
+
+            lbResultados.Items.Add(linea);
+            lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
+
+            #region pintando las escaleras y los bichos que lo mordieron
+            if (jugador is JugadorLegacy legacy)
+            {
+                for (int m = 0; m < legacy.VerCantidadQuienes; m++)
+                {
+                    Elemento quien = legacy.VerPorQuien(m);
+                    linea = $"   Afectado por: {quien.VerDescripcion()} ";
+
+                    lbResultados.Items.Add(linea);
+                    lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
+                }
+            }
             #endregion
         }
     }

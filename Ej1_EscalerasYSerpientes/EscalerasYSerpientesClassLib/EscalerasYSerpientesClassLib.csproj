@@ -51,5 +51,11 @@
   <ItemGroup>
     <Content Include="uml\nivel1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObserverClassLib\ObserverClassLib.csproj">
+      <Project>{95f16641-37ed-4a62-bb28-45b7d8f8b80d}</Project>
+      <Name>ObserverClassLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
