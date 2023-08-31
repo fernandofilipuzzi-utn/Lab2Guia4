@@ -1910,7 +1910,7 @@
 <XPD:OBJ name="OwnedViews[0]" type="UMLAssociationView" guid="Fo7vCSqPd0yGAmLhDQrV6QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">688,138;598,144</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">688,130;598,129</XPD:ATTR>
 <XPD:REF name="Model">DDu+JgOk/k6qQu7Xg/6ZjwAA</XPD:REF>
 <XPD:REF name="Head">z/44Ak+8rUSk6ouLik4gwgAA</XPD:REF>
 <XPD:REF name="Tail">qsKul1F5EU2X3OGi3Y/tPwAA</XPD:REF>
@@ -1998,7 +1998,7 @@
 <XPD:ATTR name="Left" type="integer">389</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">92</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">210</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">121</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">73</XPD:ATTR>
 <XPD:REF name="Model">H0kLC/QbdkCxAWwc7PujhgAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="zNPs7mfi3kqR95bMLYYNywAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="17G8yTh4SUSrMuqqsaRpNAAA">
@@ -2116,8 +2116,8 @@
 <XPD:OBJ name="OwnedViews[5]" type="UMLClassView" guid="kxyPC+rb9E+pvElvTrYeuQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">448</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">252</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">452</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">208</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">90</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">43</XPD:ATTR>
 <XPD:REF name="Model">41aj0LtL5EaaYmT8Zyy9qAAA</XPD:REF>
@@ -2147,7 +2147,7 @@
 <XPD:OBJ name="OwnedViews[6]" type="UMLRealizationView" guid="2w2l7YDwZEOl58mAR30Z/gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">492,252;492,212</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">495,208;494,164</XPD:ATTR>
 <XPD:REF name="Model">oAHlS2uoB0Cw4t1BlevbWQAA</XPD:REF>
 <XPD:REF name="Head">z/44Ak+8rUSk6ouLik4gwgAA</XPD:REF>
 <XPD:REF name="Tail">kxyPC+rb9E+pvElvTrYeuQAA</XPD:REF>
@@ -2380,7 +2380,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="zs/8BbzT30y4rCnlyPk/tgAA">
-<XPD:ATTR name="Name" type="string">DesubscribirObservado</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">DesuscribirObservado</XPD:ATTR>
 <XPD:REF name="Owner">7sm625M64EmOCQ5IRUNxZgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="vodV71TmtEa6D3ajYxWTKAAA">

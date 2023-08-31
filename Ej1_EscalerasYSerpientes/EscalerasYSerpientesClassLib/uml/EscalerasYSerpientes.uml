@@ -1869,7 +1869,7 @@
 <XPD:OBJ name="OwnedViews[0]" type="UMLClassView" guid="iSZgDPJJN0GzDS1XbYYYwgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">798</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">780</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">442</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">213</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">137</XPD:ATTR>
@@ -1900,14 +1900,14 @@
 <XPD:OBJ name="OwnedViews[1]" type="UMLAssociationView" guid="8KtpHt6m2UuwvdyzZVEffwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">896,442;890,389</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">885,442;884,385</XPD:ATTR>
 <XPD:ATTR name="ShowProperty" type="boolean">True</XPD:ATTR>
 <XPD:REF name="Model">anyjnbstY0OXpd8LC7IUMQAA</XPD:REF>
 <XPD:REF name="Head">WF+bskxyM06yliJNBXViTQAA</XPD:REF>
 <XPD:REF name="Tail">iSZgDPJJN0GzDS1XbYYYwgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="+h/8hA7pmkW8+/6mYFs4GwAA">
-<XPD:ATTR name="Alpha" type="real">4,36618964379137</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">76,8439978137525</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">4,31239441230455</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">60,4400529450463</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">jugadores:ArrayList</XPD:ATTR>
 <XPD:REF name="Model">anyjnbstY0OXpd8LC7IUMQAA</XPD:REF>
 </XPD:OBJ>
@@ -1987,7 +1987,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">712</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">256</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">252</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">341</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">134</XPD:ATTR>
 <XPD:REF name="Model">rEG9pc78VkO4SQ2q7wNe+AAA</XPD:REF>
@@ -2429,6 +2429,11 @@
 <XPD:ATTR name="Name" type="string">EscalerasYSerpientes</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">Create</XPD:ATTR>
 <XPD:REF name="Owner">rEG9pc78VkO4SQ2q7wNe+AAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="sG0GSWQPp0yyFSsEXkV6zwAA">
+<XPD:ATTR name="Name" type="string">cantJugadore</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">JewZw5DPiEK42iqyxnkC0gAA</XPD:REF>
+</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="vSw28N3XzEGq/Wjp8iE7iAAA">
 <XPD:ATTR name="Name" type="string">InicializarTablero</XPD:ATTR>
