@@ -10,12 +10,12 @@ namespace ObserverClassLib
     {
         List<IObservador> observadores = new List<IObservador>();
 
-        public void SubscribirObservador(IObservador obs)
+        public void SuscribirObservador(IObservador obs)
         {
             observadores.Add(obs);
         }
 
-        public void DesubscribirObservador(IObservador obs)
+        public void DesuscribirObservador(IObservador obs)
         {
             observadores.Remove(obs);
         }

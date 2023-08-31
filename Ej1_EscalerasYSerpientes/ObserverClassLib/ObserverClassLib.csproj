@@ -48,5 +48,9 @@
   <ItemGroup>
     <None Include="uml\observer.uml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="uml\secuencia_creacion.jpg" />
+    <Content Include="uml\observer.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

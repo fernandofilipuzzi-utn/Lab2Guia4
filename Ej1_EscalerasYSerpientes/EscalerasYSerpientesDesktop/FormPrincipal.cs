@@ -75,7 +75,7 @@ namespace EscalerasYSerpientesDesktop
                 lbResultados.Items.Add("---");
 
                 for (int n = 0; n < nuevo.CantidadJugadores; n++)
-                    nuevo.VerJugador(n).SubscribirObservador(this);
+                    nuevo.VerJugador(n).SuscribirObservador(this);
 
                 btnJugar.Enabled = true;
             }            
